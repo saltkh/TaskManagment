@@ -1,0 +1,11 @@
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/bin/Debug/net8.0/TaskManagement.Core.deps.json
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/bin/Debug/net8.0/TaskManagement.Core.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/bin/Debug/net8.0/TaskManagement.Core.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/obj/Debug/net8.0/TaskManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/obj/Debug/net8.0/TaskManagement.Core.AssemblyInfoInputs.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/obj/Debug/net8.0/TaskManagement.Core.AssemblyInfo.cs
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/obj/Debug/net8.0/TaskManagement.Core.csproj.CoreCompileInputs.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/obj/Debug/net8.0/TaskManagement.Core.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/obj/Debug/net8.0/refint/TaskManagement.Core.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/obj/Debug/net8.0/TaskManagement.Core.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Core/obj/Debug/net8.0/ref/TaskManagement.Core.dll

@@ -1,0 +1,17 @@
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/bin/Debug/net8.0/TaskManagement.Application.deps.json
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/bin/Debug/net8.0/TaskManagement.Application.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/bin/Debug/net8.0/TaskManagement.Application.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/bin/Debug/net8.0/TaskManagement.Core.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/bin/Debug/net8.0/TaskManagement.Infrastructure.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/bin/Debug/net8.0/TaskManagement.Core.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/bin/Debug/net8.0/TaskManagement.Infrastructure.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/TaskManagement.Application.csproj.AssemblyReference.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/TaskManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/TaskManagement.Application.AssemblyInfoInputs.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/TaskManagement.Application.AssemblyInfo.cs
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/TaskManagement.Application.csproj.CoreCompileInputs.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/TaskMana.B5C26166.Up2Date
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/TaskManagement.Application.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/refint/TaskManagement.Application.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/TaskManagement.Application.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Application/obj/Debug/net8.0/ref/TaskManagement.Application.dll

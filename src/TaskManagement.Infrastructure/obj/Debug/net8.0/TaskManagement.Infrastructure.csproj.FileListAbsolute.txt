@@ -1,0 +1,17 @@
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/bin/Debug/net8.0/TaskManagement.Infrastructure.deps.json
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/bin/Debug/net8.0/TaskManagement.Infrastructure.runtimeconfig.json
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/bin/Debug/net8.0/TaskManagement.Infrastructure.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/bin/Debug/net8.0/TaskManagement.Infrastructure.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/bin/Debug/net8.0/TaskManagement.Core.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/bin/Debug/net8.0/TaskManagement.Core.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskManagement.Infrastructure.csproj.AssemblyReference.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskManagement.Infrastructure.AssemblyInfoInputs.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskManagement.Infrastructure.AssemblyInfo.cs
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskManagement.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskMana.BCA0E1A6.Up2Date
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskManagement.Infrastructure.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/refint/TaskManagement.Infrastructure.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskManagement.Infrastructure.pdb
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/TaskManagement.Infrastructure.genruntimeconfig.cache
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.Infrastructure/obj/Debug/net8.0/ref/TaskManagement.Infrastructure.dll
