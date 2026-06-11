@@ -4,10 +4,7 @@ using TaskManagement.Application.Services;
 
 namespace TaskManagement.API.Middleware;
 
-/// <summary>
-/// Catches all unhandled exceptions and returns a consistent JSON error response.
-/// Without this, ASP.NET returns HTML error pages which are useless for API clients.
-/// </summary>
+
 public class ExceptionHandlingMiddleware
 {
     private readonly RequestDelegate _next;

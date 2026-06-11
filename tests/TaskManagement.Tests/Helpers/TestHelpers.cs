@@ -8,9 +8,7 @@ using TaskManagement.Infrastructure.Data;
 
 namespace TaskManagement.Tests.Helpers;
 
-/// <summary>
-/// Creates a fresh in-memory database for each test so tests don't interfere with each other.
-/// </summary>
+
 public static class TestDbContextFactory
 {
     public static AppDbContext Create(string dbName)
@@ -25,9 +23,7 @@ public static class TestDbContextFactory
     }
 }
 
-/// <summary>
-/// Creates a real AutoMapper instance (same profile as production) for use in tests.
-/// </summary>
+
 public static class TestMapperFactory
 {
     public static IMapper Create()
@@ -38,9 +34,6 @@ public static class TestMapperFactory
     }
 }
 
-/// <summary>
-/// Pre-built entity objects to use in tests — avoids repeating setup code.
-/// </summary>
 public static class TestData
 {
     public static User CreateUser(int id = 1, string email = "test@example.com") => new()

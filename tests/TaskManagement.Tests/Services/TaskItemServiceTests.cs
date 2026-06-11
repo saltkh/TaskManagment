@@ -29,7 +29,7 @@ public class TaskItemServiceTests
         return (service, context);
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
+//create
 
     [Fact]
     public async Task CreateAsync_WithValidData_ReturnsCreatedTask()
@@ -90,7 +90,7 @@ public class TaskItemServiceTests
         await Assert.ThrowsAsync<BadRequestException>(() => service.CreateAsync(request));
     }
 
-    // ── READ ─────────────────────────────────────────────────────────────────
+//read 
 
     [Fact]
     public async Task GetByIdAsync_WithExistingId_ReturnsTask()
@@ -166,7 +166,7 @@ public class TaskItemServiceTests
         result.Items.Should().OnlyContain(t => t.ProjectId == 1);
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
+//update
 
     [Fact]
     public async Task UpdateAsync_WithExistingId_UpdatesTask()
@@ -200,7 +200,7 @@ public class TaskItemServiceTests
             () => service.UpdateAsync(999, new UpdateTaskItemRequest { Title = "X", ProjectId = 1 }));
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
+//delete
 
     [Fact]
     public async Task DeleteAsync_WithExistingId_DeletesTask()

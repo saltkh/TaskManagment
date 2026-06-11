@@ -78,7 +78,6 @@ public class UserService : IUserService
 
     public async Task<UserResponse> CreateAsync(CreateUserRequest request)
     {
-        // Business rule: email must be unique
         if (await _userRepo.EmailExistsAsync(request.Email))
             throw new BadRequestException($"A user with email '{request.Email}' already exists.");
 
@@ -92,7 +91,6 @@ public class UserService : IUserService
         var user = await _userRepo.GetByIdAsync(id)
             ?? throw new NotFoundException("User", id);
 
-        // Business rule: email must be unique (excluding current user)
         if (await _userRepo.EmailExistsAsync(request.Email, excludeId: id))
             throw new BadRequestException($"A user with email '{request.Email}' already exists.");
 

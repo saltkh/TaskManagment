@@ -27,8 +27,7 @@ public class CommentServiceTests
         return (service, context);
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
-
+//create
     [Fact]
     public async Task CreateAsync_WithValidData_ReturnsCreatedComment()
     {
@@ -69,7 +68,7 @@ public class CommentServiceTests
         await Assert.ThrowsAsync<BadRequestException>(() => service.CreateAsync(request));
     }
 
-    // ── READ ─────────────────────────────────────────────────────────────────
+//read
 
     [Fact]
     public async Task GetByIdAsync_WithExistingId_ReturnsComment()
@@ -146,7 +145,7 @@ public class CommentServiceTests
         result.TotalPages.Should().Be(2);
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
+//update
 
     [Fact]
     public async Task UpdateAsync_WithExistingId_UpdatesComment()
@@ -175,7 +174,7 @@ public class CommentServiceTests
             () => service.UpdateAsync(999, new UpdateCommentRequest { Content = "X" }));
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
+//delete
 
     [Fact]
     public async Task DeleteAsync_WithExistingId_DeletesComment()

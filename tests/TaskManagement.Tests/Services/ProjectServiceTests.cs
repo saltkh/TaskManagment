@@ -25,8 +25,7 @@ public class ProjectServiceTests
         return new ProjectService(repo, _mapper, context);
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
-
+//create
     [Fact]
     public async Task CreateAsync_WithValidData_ReturnsCreatedProject()
     {
@@ -43,7 +42,7 @@ public class ProjectServiceTests
         result.Name.Should().Be("New Project");
     }
 
-    // ── READ ─────────────────────────────────────────────────────────────────
+//read
 
     [Fact]
     public async Task GetByIdAsync_WithExistingId_ReturnsProject()
@@ -94,7 +93,7 @@ public class ProjectServiceTests
         result.Items.Should().OnlyContain(p => p.Name.Contains("Alpha"));
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
+//update
 
     [Fact]
     public async Task UpdateAsync_WithExistingId_UpdatesProject()
@@ -122,7 +121,7 @@ public class ProjectServiceTests
             () => service.UpdateAsync(999, new UpdateProjectRequest { Name = "X" }));
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
+//delete
 
     [Fact]
     public async Task DeleteAsync_WithExistingId_DeletesProject()

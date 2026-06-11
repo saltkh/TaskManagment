@@ -5,13 +5,12 @@ using TaskManagement.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ── Register all services via our extension method ───────────────────────────
 builder.Services.AddApplicationServices(builder.Configuration);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// ── Swagger / OpenAPI ────────────────────────────────────────────────────────
+// Swagger
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new()
@@ -39,14 +38,10 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Add this BEFORE app.UseHttpsRedirection()
 app.UseCors("AllowAll");
 
-
-// ── Global Exception Handler (must be first middleware) ──────────────────────
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-// ── Auto-apply migrations on startup ────────────────────────────────────────
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();

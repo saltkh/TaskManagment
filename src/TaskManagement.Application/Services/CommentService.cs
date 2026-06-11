@@ -77,7 +77,6 @@ public class CommentService : ICommentService
         var comment = _mapper.Map<Core.Entities.Comment>(request);
         var created = await _commentRepo.CreateAsync(comment);
 
-        // Reload with navigation properties for full response
         return await GetByIdAsync(created.Id);
     }
 

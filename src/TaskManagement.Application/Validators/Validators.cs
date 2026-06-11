@@ -3,7 +3,6 @@ using TaskManagement.Core.DTOs.Requests;
 
 namespace TaskManagement.Application.Validators;
 
-// ── User Validators ─────────────────────────────────────────────────────────
 
 public class CreateUserRequestValidator : AbstractValidator<CreateUserRequest>
 {
@@ -43,7 +42,7 @@ public class UpdateUserRequestValidator : AbstractValidator<UpdateUserRequest>
     }
 }
 
-// ── Project Validators ──────────────────────────────────────────────────────
+//project validator
 
 public class CreateProjectRequestValidator : AbstractValidator<CreateProjectRequest>
 {
@@ -73,8 +72,7 @@ public class UpdateProjectRequestValidator : AbstractValidator<UpdateProjectRequ
     }
 }
 
-// ── TaskItem Validators ─────────────────────────────────────────────────────
-
+//taskitem validator
 public class CreateTaskItemRequestValidator : AbstractValidator<CreateTaskItemRequest>
 {
     public CreateTaskItemRequestValidator()
@@ -117,8 +115,7 @@ public class UpdateTaskItemRequestValidator : AbstractValidator<UpdateTaskItemRe
     }
 }
 
-// ── Comment Validators ──────────────────────────────────────────────────────
-
+//commnet validator
 public class CreateCommentRequestValidator : AbstractValidator<CreateCommentRequest>
 {
     public CreateCommentRequestValidator()

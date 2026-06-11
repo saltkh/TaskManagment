@@ -6,8 +6,7 @@ using TaskManagement.Core.Entities;
 namespace TaskManagement.Application.Mappings;
 
 /// <summary>
-/// AutoMapper profile — defines how to convert between entities and DTOs.
-/// This means we never manually copy property by property.
+///never manually copy proprty by property
 /// </summary>
 public class MappingProfile : Profile
 {

@@ -27,7 +27,7 @@ public class UserServiceTests
         return new UserService(repo, _mapper, context);
     }
 
-    // ── CREATE ───────────────────────────────────────────────────────────────
+//CREATE
 
     [Fact]
     public async Task CreateAsync_WithValidData_ReturnsCreatedUser()
@@ -65,15 +65,14 @@ public class UserServiceTests
         {
             FirstName = "Another",
             LastName  = "User",
-            Email     = "duplicate@example.com" // same email
+            Email     = "duplicate@example.com" // igive maili
         };
 
         // Act & Assert
         await Assert.ThrowsAsync<BadRequestException>(() => service.CreateAsync(request));
     }
 
-    // ── READ ─────────────────────────────────────────────────────────────────
-
+//read
     [Fact]
     public async Task GetByIdAsync_WithExistingId_ReturnsUser()
     {
@@ -96,17 +95,14 @@ public class UserServiceTests
     [Fact]
     public async Task GetByIdAsync_WithNonExistingId_ThrowsNotFoundException()
     {
-        // Arrange
         var service = CreateService();
 
-        // Act & Assert
         await Assert.ThrowsAsync<NotFoundException>(() => service.GetByIdAsync(999));
     }
 
     [Fact]
     public async Task GetAllAsync_ReturnsPagedResults()
     {
-        // Arrange
         var context = TestDbContextFactory.Create(_dbName);
         context.Users.AddRange(
             TestData.CreateUser(id: 1, email: "user1@example.com"),
@@ -118,10 +114,8 @@ public class UserServiceTests
         var service = CreateService();
         var parameters = new UserQueryParameters { Page = 1, PageSize = 2 };
 
-        // Act
         var result = await service.GetAllAsync(parameters);
 
-        // Assert
         result.Items.Should().HaveCount(2);
         result.TotalCount.Should().Be(3);
         result.TotalPages.Should().Be(2);
@@ -131,7 +125,6 @@ public class UserServiceTests
     [Fact]
     public async Task GetAllAsync_WithSearchFilter_ReturnsFilteredResults()
     {
-        // Arrange
         var context = TestDbContextFactory.Create(_dbName);
         context.Users.AddRange(
             new Core.Entities.User { Id = 1, FirstName = "Alice", LastName = "Brown", Email = "alice@example.com" },
@@ -142,20 +135,17 @@ public class UserServiceTests
         var service = CreateService();
         var parameters = new UserQueryParameters { SearchName = "alice" };
 
-        // Act
         var result = await service.GetAllAsync(parameters);
 
-        // Assert
         result.Items.Should().HaveCount(1);
         result.Items.First().FirstName.Should().Be("Alice");
     }
 
-    // ── UPDATE ───────────────────────────────────────────────────────────────
+//update
 
     [Fact]
     public async Task UpdateAsync_WithExistingId_ReturnsUpdatedUser()
     {
-        // Arrange
         var context = TestDbContextFactory.Create(_dbName);
         context.Users.Add(TestData.CreateUser(id: 1));
         await context.SaveChangesAsync();
@@ -168,10 +158,9 @@ public class UserServiceTests
             Email     = "updated@example.com"
         };
 
-        // Act
         var result = await service.UpdateAsync(1, request);
 
-        // Assert
+    
         result.FirstName.Should().Be("Updated");
         result.Email.Should().Be("updated@example.com");
     }
@@ -179,7 +168,7 @@ public class UserServiceTests
     [Fact]
     public async Task UpdateAsync_WithNonExistingId_ThrowsNotFoundException()
     {
-        // Arrange
+        
         var service = CreateService();
         var request = new UpdateUserRequest
         {
@@ -188,36 +177,30 @@ public class UserServiceTests
             Email     = "x@example.com"
         };
 
-        // Act & Assert
         await Assert.ThrowsAsync<NotFoundException>(() => service.UpdateAsync(999, request));
     }
 
-    // ── DELETE ───────────────────────────────────────────────────────────────
-
+//delete
     [Fact]
     public async Task DeleteAsync_WithExistingId_DeletesUser()
     {
-        // Arrange
         var context = TestDbContextFactory.Create(_dbName);
         context.Users.Add(TestData.CreateUser(id: 1));
         await context.SaveChangesAsync();
 
         var service = CreateService();
 
-        // Act
         await service.DeleteAsync(1);
 
-        // Assert — user should no longer be found
         await Assert.ThrowsAsync<NotFoundException>(() => service.GetByIdAsync(1));
     }
 
     [Fact]
     public async Task DeleteAsync_WithNonExistingId_ThrowsNotFoundException()
     {
-        // Arrange
+        
         var service = CreateService();
 
-        // Act & Assert
         await Assert.ThrowsAsync<NotFoundException>(() => service.DeleteAsync(999));
     }
 }
