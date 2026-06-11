@@ -1,0 +1,28 @@
+/* topbar */
+.swagger-ui .topbar { background: #534AB7; }
+.swagger-ui .topbar-wrapper img,
+.swagger-ui .topbar-wrapper svg { display: none; }
+.swagger-ui .topbar-wrapper::before {
+    content: "✓ Task Manager";
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* background */
+.swagger-ui { background: #EEEDFE; }
+.swagger-ui .information-container { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; border: 0.5px solid #CECBF6; }
+
+/* title */
+.swagger-ui .info .title { color: #3C3489; }
+.swagger-ui .info p { color: #534AB7; }
+
+/* method colors */
+.swagger-ui .opblock.opblock-post { background: #EEEDFE; border-color: #AFA9EC; }
+.swagger-ui .opblock.opblock-get  { background: #E1F5EE; border-color: #9FE1CB; }
+.swagger-ui .opblock.opblock-put  { background: #FAEEDA; border-color: #FAC775; }
+.swagger-ui .opblock.opblock-delete { background: #FCEBEB; border-color: #F7C1C1; }
+
+/* execute button */
+.swagger-ui .btn.execute { background: #534AB7; border-color: #534AB7; color: white; }
+.swagger-ui .btn.execute:hover { background: #3C3489; }

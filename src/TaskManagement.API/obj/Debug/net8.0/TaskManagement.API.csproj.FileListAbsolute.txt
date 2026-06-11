@@ -139,3 +139,5 @@
 /Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.API/obj/Debug/net8.0/TaskManagement.API.pdb
 /Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.API/obj/Debug/net8.0/TaskManagement.API.genruntimeconfig.cache
 /Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.API/obj/Debug/net8.0/ref/TaskManagement.API.dll
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.API/bin/Debug/net8.0/TaskManagement.API.staticwebassets.runtime.json
+/Users/mariamsaltkhutsishvili/Downloads/TaskManagement/src/TaskManagement.API/obj/Debug/net8.0/TaskManagement.API.sourcelink.json
